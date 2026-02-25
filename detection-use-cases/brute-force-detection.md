@@ -1,8 +1,5 @@
 
 ---
-
-## **3️⃣ detection-use-cases/brute-force-detection.md**
-
 # Brute Force Detection
 
 ## Threat Description
