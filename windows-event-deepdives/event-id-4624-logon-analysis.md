@@ -21,3 +21,12 @@ Event 4624 logs successful user logons to a Windows system. Critical for detecti
 index=wineventlog EventCode=4624 
 | stats count by TargetUserName, IpAddress, LogonType 
 | where count > 5
+```
+## False Positive Considerations
+- Service accounts logging in multiple times may trigger alerts
+- Remote logons from VPN or legitimate admin activity
+
+## MITRE ATT&CK Mapping
+- T1078 – Valid Accounts
+- T1087.002 – Account Discovery: Domain Accounts
+- T1566 – Credential Access
